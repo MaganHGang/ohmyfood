@@ -1,0 +1,44 @@
+@import '../base/fontface'; 
+/*@import 'base/fontface'; */
+
+$bodytext:Roboto;
+$titletext:Shrikhand;
+$componentmobilewidth:100%;
+$footercolor: black;
+$footerfontcolor:white;
+
+@mixin mainContainer{
+    display: flex;
+}
+@mixin maintext($bodytext)
+{
+    font-family:$bodytext,sans-serif;
+}
+@mixin titletext ($titletext){
+    font-family:$titletext,cursive;
+}
+
+@mixin headerBanner{
+    width:$componentmobilewidth;
+    display:flex;
+}
+
+@mixin ohmyfoodlogoContainer{
+    display: flex;
+    justify-content: center;
+}
+@mixin ohmyfoodlogo {
+    width:50%;
+    object-fit:contain;
+}
+
+@mixin footerContainer ($footercolor,$footerfontcolor) {
+    background-color: $footercolor;
+    color:$footerfontcolor;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding:5px 0 0 10px;
+    width:100%;  
+}

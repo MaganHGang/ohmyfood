@@ -1,0 +1,12 @@
+@import '../abstract/mixins';
+
+.header{
+    @include headerBanner;
+    .OhmyfoodLogo
+    { 
+        @include ohmyfoodlogoContainer;
+        .OhmyfoodLogoImg{
+            @include ohmyfoodlogo;
+        }
+    }
+}
