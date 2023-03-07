@@ -1,12 +1,26 @@
 @import '../abstract/mixins';
 
-.header{
+.header {
     @include headerBanner;
-    .OhmyfoodLogo
-    { 
+
+    .OhmyfoodLogo {
         @include ohmyfoodlogoContainer;
-        .OhmyfoodLogoImg{
+
+        .OhmyfoodLogoImg {
             @include ohmyfoodlogo;
         }
+    }
+
+
+}
+
+.subHead {
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+    width: $componentmobilewidth;
+
+    .subHeadText {
+        @include maintext(Roboto);
     }
 }
