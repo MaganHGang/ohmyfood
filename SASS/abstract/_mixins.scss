@@ -10,6 +10,7 @@ $Menucolor: #F2F2F2;
 
 @mixin mainContainer {
     display: flex;
+    flex-direction: column;
 }
 
 @mixin maintext($bodytext) {
@@ -28,11 +29,13 @@ $Menucolor: #F2F2F2;
 @mixin ohmyfoodlogoContainer {
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 @mixin ohmyfoodlogo {
     width: 50%;
     object-fit: contain;
+    margin: auto;
 }
 
 @mixin menuStyle {
@@ -48,4 +51,9 @@ $Menucolor: #F2F2F2;
     flex-direction: column;
     padding: 5px 0 0 10px;
     width: 100%;
+}
+
+@mixin buttongradient {
+    background: rgb(255, 121, 218);
+    background: linear-gradient(125deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
 }
