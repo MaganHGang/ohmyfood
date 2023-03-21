@@ -19,8 +19,75 @@
     //display: flex;
     text-align: center;
     width: $componentmobilewidth;
+    box-shadow: 0 5px 5px -3px inset;
 
-    .subHeadText {
-        @include maintext(Roboto);
+
+
+
+}
+
+.subHeadText {
+    @include maintext(Roboto);
+}
+
+.subHead2 {
+    background-color: #F2F2F2;
+    text-align: center;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+
+    .explorerestru {
+        @include buttongradient;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        height: 50px;
+        width: 40%;
+        box-shadow: 0 3px 4px #BBB;
+
     }
+
+
+}
+
+.How-it-works-container {
+    padding: 10px;
+
+
+
+    .How-it-works-body {
+        /* display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center; */
+
+        .How-it-works-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            background-color: #F2F2F2;
+            width: 90%;
+            height: 70px;
+            border-radius: 25px;
+            border: none;
+            box-shadow: 0 3px 4px #BBB;
+
+            .circlebox {
+
+                background-color: #9356DC;
+                margin-right: 132px;
+                border-radius: 50%;
+                padding: 6px;
+                height: 33px;
+                margin-top: 15px;
+            }
+
+            .IconStyle {
+                margin: 20px 20px 0 0;
+
+            }
+        }
+    }
+
 }
