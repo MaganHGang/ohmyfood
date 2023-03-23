@@ -66,6 +66,7 @@
             display: flex;
             flex-wrap: wrap;
             margin-top: 20px;
+            margin-left: 25px;
             background-color: #F2F2F2;
             width: 90%;
             height: 70px;
@@ -133,6 +134,16 @@
 
                 .sectionCardRestruCaption {
                     padding-left: 10px;
+                    display: flex;
+
+                    .captiontext {
+                        width: 90%;
+                    }
+
+                    .heartIcon {
+                        padding-top: 40px;
+
+                    }
                 }
             }
         }

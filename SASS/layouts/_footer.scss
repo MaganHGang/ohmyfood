@@ -1,12 +1,23 @@
 @import '../abstract/mixins';
 
-.footerContainer{
-    @include footerContainer(black,white);
+.footerContainer {
+    @include footerContainer(black, white);
 }
-.footerTitle{
+
+.footerTitle {
     @include titletext(Shrikhand);
 }
-.footerText{
+
+.footersection {
+    padding: 10px;
+}
+
+.footerText {
     @include maintext(Roboto);
     display: block;
+
+    .footIcon {
+        padding-right: 5px;
+    }
+
 }
