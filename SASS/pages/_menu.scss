@@ -1,0 +1,38 @@
+@import '../abstract/mixins';
+
+.menuheader {
+
+    .menuHeaderContainer {
+        @include headerBanner;
+
+        .OhmyfoodLogo {
+            @include ohmyfoodlogoContainer;
+
+            .OhmyfoodLogoImg {
+                @include ohmyfoodlogo;
+            }
+        }
+
+        .BackButtonContainer {
+
+            //width: 10%;
+            .backarrow {
+                color: black;
+            }
+
+            margin-right: 10px;
+            padding-left: 10px;
+            padding-top: 10px;
+        }
+    }
+
+
+}
+
+.MenuBanner {
+    @include MenuBannerContainer;
+
+    .menuBannerimg {
+        @include menuBannerimg;
+    }
+}

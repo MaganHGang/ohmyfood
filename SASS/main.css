@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -165,4 +166,43 @@ a {
 }
 .RestaurantOptions .column .productRestruCard .sectionCardRestru .sectionCardRestruCaption .heartIcon {
   padding-top: 40px;
+}
+
+/*@import 'base/fontface'; */
+.menuheader .menuHeaderContainer {
+  width: 100%;
+  display: flex;
+}
+.menuheader .menuHeaderContainer .OhmyfoodLogo {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.menuheader .menuHeaderContainer .OhmyfoodLogo .OhmyfoodLogoImg {
+  width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+.menuheader .menuHeaderContainer .BackButtonContainer {
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.menuheader .menuHeaderContainer .BackButtonContainer .backarrow {
+  color: black;
+}
+
+.MenuBanner {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: -1;
+}
+.MenuBanner .menuBannerimg {
+  height: auto;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */

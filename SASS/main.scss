@@ -1,7 +1,8 @@
 @import 'abstract/mixins',
-        'abstract/base',
-        'abstract/variables';
+'abstract/base',
+'abstract/variables';
 @import 'layouts/footer',
-        'layouts/mainContainer';
+'layouts/mainContainer';
 
-@import 'pages/homepage';
+@import 'pages/homepage',
+'pages/menu';
