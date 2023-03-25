@@ -1,4 +1,5 @@
-@import '../abstract/mixins';
+@import '../abstract/mixins',
+'../abstract/variables';
 
 .menuheader {
 
@@ -30,9 +31,104 @@
 }
 
 .MenuBanner {
-    @include MenuBannerContainer;
+    //@include MenuBannerContainer;
+    display: flex;
+    width: 100%;
+    /* height: 512px;
+    position: relative; */
+    //z-index: -1;
+
 
     .menuBannerimg {
-        @include menuBannerimg;
+        //@include menuBannerimg;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+}
+
+.MenuContainer {
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: #f2f2f2;
+    border-radius: 30px 30px 0 0;
+    z-index: 1;
+    padding: 10px;
+
+    .MenuTitleboxContainer {
+        display: flex;
+
+
+        .MenuTitleBox {
+            width: 90%;
+
+
+            .subHeadTitle {
+                @include titletext(Shrikhand);
+            }
+
+
+        }
+
+        .heartIcon2 {
+            padding-top: 20px;
+        }
+    }
+
+    .MenuSubTitlebox {
+        text-transform: uppercase;
+    }
+
+    .MenuSubTitlebox::after {
+        content: "";
+        border-top: 3px solid $Tertiary-color;
+        display: block;
+        width: 10%;
+    }
+
+    .productCard {
+        background-color: white;
+        border-radius: 10px;
+        padding: 5px;
+        height: 100px;
+        box-shadow: 0 3px 4px #BBB;
+        margin-top: 20px;
+
+
+        .price {
+            float: right;
+            font-weight: bold;
+            padding-right: 20px;
+        }
+    }
+
+    .Menusection {
+        display: flex;
+        flex-direction: column;
+        //justify-content: space-between;
+        margin-bottom: 30px;
+
+
+    }
+
+    .OrderButtonContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        .OrderButton {
+            @include buttongradient;
+            color: white;
+            border-radius: 25px;
+            border: none;
+            height: 30px;
+            width: 10%;
+            box-shadow: 0 3px 4px #BBB;
+        }
     }
 }

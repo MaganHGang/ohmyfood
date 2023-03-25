@@ -42,29 +42,6 @@ $Menucolor: #F2F2F2;
     background-color: $Menucolor;
 }
 
-@mixin MenuBannerContainer {
-    display: flex;
-    width: 100%;
-    height: auto;
-    position: relative;
-    z-index: -1;
-
-    //justify-content: center;
-    //argin: auto;
-}
-
-@mixin menuBannerimg {
-
-    //max-height: 32rem;
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-    //margin: auto;
-
-}
-
-
-
 @mixin footerContainer ($footercolor, $footerfontcolor) {
     background-color: $footercolor;
     color: $footerfontcolor;
