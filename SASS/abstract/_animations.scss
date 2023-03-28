@@ -1,0 +1,50 @@
+@import 'mixins';
+
+.hoverbutton:hover {
+    @include buttoneffect;
+}
+
+/*choose dish 
+*/
+.hideText {
+    transition: all 0.49s ease-in-out;
+
+}
+
+.price {
+    transition: all 0.50s ease-in-out;
+
+}
+
+.btncheck {
+    transition: all 0.50s ease-in-out;
+
+    .colourButton {
+        transform: rotate(360deg);
+        transition-duration: 0.70s;
+
+    }
+
+
+}
+
+.productCard:hover {
+    .price {
+        left: 185px;
+    }
+
+    .btncheck {
+        left: 225px;
+
+        .colourButton {
+            transform: rotate(0deg);
+
+        }
+
+    }
+
+    .hideText {
+        width: 60%;
+
+    }
+}

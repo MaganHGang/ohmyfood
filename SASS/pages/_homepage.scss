@@ -1,5 +1,7 @@
 @import '../abstract/mixins',
-'../abstract/variables';
+'../abstract/variables',
+'../abstract/animations';
+
 
 .header {
     @include headerBanner;
@@ -144,7 +146,18 @@
 
                     .heartIcon {
                         padding-top: 40px;
+                        display: flex;
 
+                    }
+                }
+
+                .colourhover {
+                    cursor: pointer;
+                    transition: all 0.5s;
+
+                    .colourhover:hover {
+                        @include buttongradient;
+                        //color: blue;
                     }
                 }
             }

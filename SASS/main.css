@@ -4,6 +4,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -42,9 +44,46 @@ a {
 .mainContainer {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 /*@import 'base/fontface'; */
+/*@import 'base/fontface'; */
+.hoverbutton:hover {
+  box-shadow: 0 10px 4px #BBB;
+}
+
+/*choose dish 
+*/
+.hideText {
+  transition: all 0.49s ease-in-out;
+}
+
+.price {
+  transition: all 0.5s ease-in-out;
+}
+
+.btncheck {
+  transition: all 0.5s ease-in-out;
+}
+.btncheck .colourButton {
+  transform: rotate(360deg);
+  transition-duration: 0.7s;
+}
+
+.productCard:hover .price {
+  left: 185px;
+}
+.productCard:hover .btncheck {
+  left: 225px;
+}
+.productCard:hover .btncheck .colourButton {
+  transform: rotate(0deg);
+}
+.productCard:hover .hideText {
+  width: 60%;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -166,9 +205,54 @@ a {
 }
 .RestaurantOptions .column .productRestruCard .sectionCardRestru .sectionCardRestruCaption .heartIcon {
   padding-top: 40px;
+  display: flex;
+}
+.RestaurantOptions .column .productRestruCard .sectionCardRestru .colourhover {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.RestaurantOptions .column .productRestruCard .sectionCardRestru .colourhover .colourhover:hover {
+  background: rgb(255, 121, 218);
+  background: linear-gradient(125deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
 
 /*@import 'base/fontface'; */
+/*@import 'base/fontface'; */
+.hoverbutton:hover {
+  box-shadow: 0 10px 4px #BBB;
+}
+
+/*choose dish 
+*/
+.hideText {
+  transition: all 0.49s ease-in-out;
+}
+
+.price {
+  transition: all 0.5s ease-in-out;
+}
+
+.btncheck {
+  transition: all 0.5s ease-in-out;
+}
+.btncheck .colourButton {
+  transform: rotate(360deg);
+  transition-duration: 0.7s;
+}
+
+.productCard:hover .price {
+  left: 185px;
+}
+.productCard:hover .btncheck {
+  left: 225px;
+}
+.productCard:hover .btncheck .colourButton {
+  transform: rotate(0deg);
+}
+.productCard:hover .hideText {
+  width: 60%;
+}
+
 .menuheader .menuHeaderContainer {
   width: 100%;
   display: flex;
@@ -196,8 +280,8 @@ a {
 .MenuBanner {
   display: flex;
   width: 100%;
-  /* height: 512px;
-  position: relative; */
+  height: 512px;
+  z-index: -1;
 }
 .MenuBanner .menuBannerimg {
   height: 100%;
@@ -211,8 +295,10 @@ a {
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 30px 30px 0 0;
-  z-index: 1;
   padding: 10px;
+  position: absolute;
+  top: 530px;
+  width: 100%;
 }
 .MenuContainer .MenuTitleboxContainer {
   display: flex;
@@ -242,11 +328,36 @@ a {
   height: 100px;
   box-shadow: 0 3px 4px #BBB;
   margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.MenuContainer .productCard .hideText {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.MenuContainer .productCard .btncheck {
+  right: -106px;
+  top: 0;
+  position: absolute;
+  background-color: #99E2D0;
+  border: none;
+  height: 100%;
+  width: 100px;
+  border-radius: 0 10px 10px 0;
+}
+.MenuContainer .productCard .btncheck .colourButton {
+  color: white;
+  font-size: 30px;
 }
 .MenuContainer .productCard .price {
-  float: right;
+  bottom: -2px;
+  right: -5px;
+  position: absolute;
   font-weight: bold;
   padding-right: 20px;
+  padding-left: 10px;
+  font-family: Roboto, sans-serif;
 }
 .MenuContainer .Menusection {
   display: flex;
@@ -260,7 +371,7 @@ a {
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-.MenuContainer .OrderButtonContainer .OrderButton {
+.MenuContainer .OrderButton {
   background: rgb(255, 121, 218);
   background: linear-gradient(125deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   color: white;
