@@ -19,7 +19,9 @@
 
 .subHead {
     background-color: #cccccc;
-    //display: flex;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
     text-align: center;
     width: $componentmobilewidth;
     box-shadow: 0 5px 5px -3px inset;
@@ -31,11 +33,15 @@
 
 .subHeadText {
     @include maintext(Roboto);
+    width: 85%;
 }
 
 .subHead2 {
     background-color: #F2F2F2;
     text-align: center;
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
     // flex-direction: column;
     flex-wrap: wrap;
     padding-bottom: 50px;
@@ -67,7 +73,6 @@
 
         .How-it-works-buttons {
             display: flex;
-            flex-wrap: wrap;
             margin-top: 20px;
             margin-left: 25px;
             background-color: #F2F2F2;
@@ -80,7 +85,7 @@
             .circlebox {
 
                 background-color: $primary-color;
-                margin-right: 132px;
+                margin-right: 50px;
                 border-radius: 50%;
                 padding: 6px;
                 height: 33px;
@@ -148,7 +153,10 @@
                         padding-top: 40px;
                         display: flex;
 
+
+
                     }
+
                 }
 
                 .colourhover {
@@ -166,4 +174,18 @@
     }
 
 
+}
+
+.colourhover {
+    padding: 0;
+    margin: 0;
+
+}
+
+.colourhover:hover::before {
+    background-color: rgb(255, 121, 218);
+    background-clip: content-box;
+    color: transparent;
+    padding: 0;
+    margin: 0;
 }

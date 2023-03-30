@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -15,10 +16,216 @@ a {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .subHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subHead2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .How-it-works-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .How-it-works-container .How-it-works-titleBox {
+    width: 60%;
+    text-align: center;
+  }
+  .How-it-works-container .circlebox {
+    margin-right: 33px;
+  }
+  .Menusection {
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .productCard {
+    width: 48%;
+  }
+  /*
+  .productCard:hover {
+      .price {
+          left: -600px;
+      }
+
+      .btncheck {
+          left: -650px;
+
+
+
+      }
+
+      .hideText {
+          width: 60%;
+
+      }
+
+  } */
+}
+@media only screen and (min-width: 992px) {
+  .column {
+    padding-left: 115px;
+    padding-top: 30px;
+  }
+  .RestaurantOptionsTitleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .sectionCardRestru {
+    height: 200px;
+    width: 80%;
+  }
+  .MenuTitleBox {
+    text-align: center;
+  }
+  .productCard {
+    width: 37%;
+  }
+}
+/*@import 'base/fontface'; */
+/*
+    LOADER
+*/
+.loaderContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: loaderbackground 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+  animation-delay: 1s;
+  top: 0;
+  left: 0;
+}
+.loaderContainer .loader {
+  border: aqua 16px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  animation: loader 0.5s linear;
+}
+
+@keyframes loaderbackground {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.hoverbutton:hover {
+  box-shadow: 0 10px 4px #BBB;
+}
+
+/*choose dish 
+*/
+.hideText {
+  transition: all 0.1s ease-in-out;
+}
+
+.price {
+  transition: all 0.5s ease-in-out;
+}
+
+.btncheck {
+  transition: all 0.9s ease-in-out;
+}
+.btncheck .colourButton {
+  transform: rotate(360deg);
+  transition-duration: 0.7s;
+}
+
+.productCard:hover .price {
+  left: 200px;
+}
+.productCard:hover .btncheck {
+  left: 250px;
+}
+.productCard:hover .btncheck .colourButton {
+  transform: rotate(0deg);
+}
+.productCard:hover .hideText {
+  width: 60%;
+}
+
+.MenuSectionContainer {
+  animation-name: menuloader;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.Entrees {
+  animation-delay: 0.2s;
+}
+
+.MainDish {
+  animation-delay: 0.6s;
+}
+
+.Desserts {
+  animation-delay: 1.5s;
+}
+
+@keyframes menuloader {
+  /*
+  0% {
+      transform: scale(0)
+  }
+
+  100% {
+      transform: scale(1);
+  }
+  */
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /*@import 'base/fontface'; */
 .footerContainer {
   background-color: black;
   color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 1500px;
+  padding: 5px 0 0 10px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.footerContainer2 {
+  background-color: black;
+  color: white;
+  display: flex;
   flex-direction: column;
   padding: 5px 0 0 10px;
   width: 100%;
@@ -49,6 +256,53 @@ a {
 
 /*@import 'base/fontface'; */
 /*@import 'base/fontface'; */
+/*
+    LOADER
+*/
+.loaderContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: loaderbackground 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+  animation-delay: 1s;
+  top: 0;
+  left: 0;
+}
+.loaderContainer .loader {
+  border: aqua 16px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  animation: loader 0.5s linear;
+}
+
+@keyframes loaderbackground {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .hoverbutton:hover {
   box-shadow: 0 10px 4px #BBB;
 }
@@ -56,7 +310,7 @@ a {
 /*choose dish 
 */
 .hideText {
-  transition: all 0.49s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .price {
@@ -64,7 +318,7 @@ a {
 }
 
 .btncheck {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .btncheck .colourButton {
   transform: rotate(360deg);
@@ -72,10 +326,10 @@ a {
 }
 
 .productCard:hover .price {
-  left: 185px;
+  left: 200px;
 }
 .productCard:hover .btncheck {
-  left: 225px;
+  left: 250px;
 }
 .productCard:hover .btncheck .colourButton {
   transform: rotate(0deg);
@@ -84,6 +338,43 @@ a {
   width: 60%;
 }
 
+.MenuSectionContainer {
+  animation-name: menuloader;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.Entrees {
+  animation-delay: 0.2s;
+}
+
+.MainDish {
+  animation-delay: 0.6s;
+}
+
+.Desserts {
+  animation-delay: 1.5s;
+}
+
+@keyframes menuloader {
+  /*
+  0% {
+      transform: scale(0)
+  }
+
+  100% {
+      transform: scale(1);
+  }
+  */
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header {
   width: 100%;
   display: flex;
@@ -102,6 +393,9 @@ a {
 
 .subHead {
   background-color: #cccccc;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
   text-align: center;
   width: 100%;
   box-shadow: 0 5px 5px -3px inset;
@@ -109,6 +403,7 @@ a {
 
 .subHeadText {
   font-family: Roboto, sans-serif;
+  width: 85%;
 }
 
 .subHead2 {
@@ -139,7 +434,6 @@ a {
 }
 .How-it-works-container .How-it-works-body .How-it-works-buttons {
   display: flex;
-  flex-wrap: wrap;
   margin-top: 20px;
   margin-left: 25px;
   background-color: #F2F2F2;
@@ -151,7 +445,7 @@ a {
 }
 .How-it-works-container .How-it-works-body .How-it-works-buttons .circlebox {
   background-color: #9356DC;
-  margin-right: 132px;
+  margin-right: 50px;
   border-radius: 50%;
   padding: 6px;
   height: 33px;
@@ -216,8 +510,68 @@ a {
   background: linear-gradient(125deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
 }
 
+.colourhover {
+  padding: 0;
+  margin: 0;
+}
+
+.colourhover:hover::before {
+  background-color: rgb(255, 121, 218);
+  background-clip: content-box;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
 /*@import 'base/fontface'; */
 /*@import 'base/fontface'; */
+/*
+    LOADER
+*/
+.loaderContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  animation: loaderbackground 0.5s;
+  animation-fill-mode: forwards;
+  z-index: 100;
+  animation-delay: 1s;
+  top: 0;
+  left: 0;
+}
+.loaderContainer .loader {
+  border: aqua 16px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  animation: loader 0.5s linear;
+}
+
+@keyframes loaderbackground {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .hoverbutton:hover {
   box-shadow: 0 10px 4px #BBB;
 }
@@ -225,7 +579,7 @@ a {
 /*choose dish 
 */
 .hideText {
-  transition: all 0.49s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .price {
@@ -233,7 +587,7 @@ a {
 }
 
 .btncheck {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .btncheck .colourButton {
   transform: rotate(360deg);
@@ -241,10 +595,10 @@ a {
 }
 
 .productCard:hover .price {
-  left: 185px;
+  left: 200px;
 }
 .productCard:hover .btncheck {
-  left: 225px;
+  left: 250px;
 }
 .productCard:hover .btncheck .colourButton {
   transform: rotate(0deg);
@@ -253,6 +607,43 @@ a {
   width: 60%;
 }
 
+.MenuSectionContainer {
+  animation-name: menuloader;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+
+.Entrees {
+  animation-delay: 0.2s;
+}
+
+.MainDish {
+  animation-delay: 0.6s;
+}
+
+.Desserts {
+  animation-delay: 1.5s;
+}
+
+@keyframes menuloader {
+  /*
+  0% {
+      transform: scale(0)
+  }
+
+  100% {
+      transform: scale(1);
+  }
+  */
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .menuheader .menuHeaderContainer {
   width: 100%;
   display: flex;
@@ -288,6 +679,10 @@ a {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.MenuContainermaster {
+  position: relative;
 }
 
 .MenuContainer {
@@ -352,7 +747,7 @@ a {
 }
 .MenuContainer .productCard .price {
   bottom: -2px;
-  right: -5px;
+  right: -2px;
   position: absolute;
   font-weight: bold;
   padding-right: 20px;
@@ -368,7 +763,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 .MenuContainer .OrderButton {
@@ -378,6 +772,6 @@ a {
   border-radius: 25px;
   border: none;
   height: 30px;
-  width: 10%;
+  width: 20%;
   box-shadow: 0 3px 4px #BBB;
 }/*# sourceMappingURL=main.css.map */

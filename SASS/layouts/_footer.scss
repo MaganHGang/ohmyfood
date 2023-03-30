@@ -4,6 +4,11 @@
     @include footerContainer(black, white);
 }
 
+.footerContainer2 {
+    @include footerContainer2;
+}
+
+
 .footerTitle {
     @include titletext(Shrikhand);
 }
