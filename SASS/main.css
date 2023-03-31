@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  margin: 0;
+}
+
 @media only screen and (min-width: 768px) {
   .subHead {
     display: flex;
@@ -47,14 +51,14 @@ a {
   .productCard {
     width: 48%;
   }
-  /*
+  /* 
   .productCard:hover {
       .price {
-          left: -600px;
+          left: -1000px;
       }
 
       .btncheck {
-          left: -650px;
+          left: -1050px;
 
 
 
@@ -139,6 +143,7 @@ a {
 }
 .hoverbutton:hover {
   box-shadow: 0 10px 4px #BBB;
+  opacity: 0.8;
 }
 
 /*choose dish 
@@ -209,6 +214,10 @@ a {
     transform: translateY(0);
   }
 }
+.colourIcon:hover {
+  color: #9356DC;
+}
+
 /*@import 'base/fontface'; */
 .footerContainer {
   background-color: black;
@@ -305,6 +314,7 @@ a {
 }
 .hoverbutton:hover {
   box-shadow: 0 10px 4px #BBB;
+  opacity: 0.8;
 }
 
 /*choose dish 
@@ -375,6 +385,10 @@ a {
     transform: translateY(0);
   }
 }
+.colourIcon:hover {
+  color: #9356DC;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -442,14 +456,20 @@ a {
   border-radius: 25px;
   border: none;
   box-shadow: 0 3px 4px #BBB;
+  position: relative;
+  padding-left: 38px;
 }
 .How-it-works-container .How-it-works-body .How-it-works-buttons .circlebox {
   background-color: #9356DC;
+  position: absolute;
+  color: white;
   margin-right: 50px;
   border-radius: 50%;
   padding: 6px;
   height: 33px;
   margin-top: 15px;
+  left: -11px;
+  top: 4px;
 }
 .How-it-works-container .How-it-works-body .How-it-works-buttons .IconStyle {
   margin: 20px 20px 0 0;
@@ -482,6 +502,18 @@ a {
   background-color: white;
   box-shadow: 0 3px 4px #BBB;
   border-radius: 15px;
+  position: relative;
+}
+.RestaurantOptions .column .productRestruCard .sectionCardRestru .newBox {
+  background-color: #99E2D0;
+  text-align: center;
+  color: rgb(0, 102, 51);
+  height: 55px;
+  width: 110px;
+  right: 8px;
+  top: 8px;
+  position: absolute;
+  padding-left: 13px;
 }
 .RestaurantOptions .column .productRestruCard .sectionCardRestru .sectionCardRestruimg {
   width: 100%;
@@ -574,6 +606,7 @@ a {
 }
 .hoverbutton:hover {
   box-shadow: 0 10px 4px #BBB;
+  opacity: 0.8;
 }
 
 /*choose dish 
@@ -644,6 +677,10 @@ a {
     transform: translateY(0);
   }
 }
+.colourIcon:hover {
+  color: #9356DC;
+}
+
 .menuheader .menuHeaderContainer {
   width: 100%;
   display: flex;

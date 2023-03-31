@@ -1,4 +1,5 @@
-@import 'mixins';
+@import 'mixins',
+'variables';
 
 /*
     LOADER
@@ -62,6 +63,7 @@
 
 .hoverbutton:hover {
     @include buttoneffect;
+    opacity: 0.8;
 }
 
 
@@ -157,4 +159,9 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.colourIcon:hover {
+    color: $primary-color;
+
 }

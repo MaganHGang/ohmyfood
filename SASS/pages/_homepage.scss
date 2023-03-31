@@ -81,15 +81,22 @@
             border-radius: 25px;
             border: none;
             box-shadow: 0 3px 4px #BBB;
+            position: relative;
+            padding-left: 38px;
 
             .circlebox {
 
                 background-color: $primary-color;
+                position: absolute;
+                color: white;
                 margin-right: 50px;
                 border-radius: 50%;
                 padding: 6px;
                 height: 33px;
                 margin-top: 15px;
+                left: -11px;
+                top: 4px;
+
 
             }
 
@@ -133,6 +140,19 @@
                 //height: 240px;
                 box-shadow: 0 3px 4px #BBB;
                 border-radius: 15px;
+                position: relative;
+
+                .newBox {
+                    background-color: $Tertiary-color;
+                    text-align: center;
+                    color: rgb(0, 102, 51);
+                    height: 55px;
+                    width: 110px;
+                    right: 8px;
+                    top: 8px;
+                    position: absolute;
+                    padding-left: 13px;
+                }
 
                 .sectionCardRestruimg {
                     width: 100%;
