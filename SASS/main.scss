@@ -1,8 +1,6 @@
-@import 'abstract/mixins',
-'abstract/base',
-'abstract/variables',
-'abstract/mediaqueries',
-'abstract/animations';
+@import 'abstract/base',
+'abstract/mediaqueries';
+
 
 @import 'layouts/footer',
 'layouts/mainContainer';

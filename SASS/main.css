@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-/*@import 'base/fontface'; */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
@@ -93,131 +90,6 @@ body {
     width: 37%;
   }
 }
-/*@import 'base/fontface'; */
-/*
-    LOADER
-*/
-.loaderContainer {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  animation: loaderbackground 0.5s;
-  animation-fill-mode: forwards;
-  z-index: 100;
-  animation-delay: 1s;
-  top: 0;
-  left: 0;
-}
-.loaderContainer .loader {
-  border: aqua 16px solid;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  animation: loader 0.5s linear;
-}
-
-@keyframes loaderbackground {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -100;
-  }
-}
-@keyframes loader {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.hoverbutton:hover {
-  box-shadow: 0 10px 4px #BBB;
-  opacity: 0.8;
-}
-
-/*choose dish 
-*/
-.hideText {
-  transition: all 0.1s ease-in-out;
-}
-
-.price {
-  transition: all 0.5s ease-in-out;
-}
-
-.btncheck {
-  transition: all 0.9s ease-in-out;
-}
-.btncheck .colourButton {
-  transform: rotate(360deg);
-  transition-duration: 0.7s;
-}
-
-.productCard:hover .price {
-  left: 200px;
-}
-.productCard:hover .btncheck {
-  left: 250px;
-}
-.productCard:hover .btncheck .colourButton {
-  transform: rotate(0deg);
-}
-.productCard:hover .hideText {
-  width: 60%;
-}
-
-.MenuSectionContainer {
-  animation-name: menuloader;
-  animation-duration: 1000ms;
-  animation-fill-mode: backwards;
-}
-
-.Entrees {
-  animation-delay: 0.2s;
-}
-
-.MainDish {
-  animation-delay: 0.6s;
-}
-
-.Desserts {
-  animation-delay: 1.5s;
-}
-
-@keyframes menuloader {
-  /*
-  0% {
-      transform: scale(0)
-  }
-
-  100% {
-      transform: scale(1);
-  }
-  */
-  0% {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.colourIcon:hover {
-  color: #9356DC;
-}
-
 /*@import 'base/fontface'; */
 .footerContainer {
   background-color: black;
@@ -418,6 +290,10 @@ body {
 .subHeadText {
   font-family: Roboto, sans-serif;
   width: 85%;
+}
+
+.contentSub {
+  font-weight: bold;
 }
 
 .subHead2 {
